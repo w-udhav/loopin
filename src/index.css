@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Default Theme Variables */
+:root {
+  --font-family: system-ui, "Inter";
+  --line-height: 1.5;
+  --font-weight: 400;
+
+  --color-scheme: light dark;
+  --text-color: #d1d1d1;
+  --background-color: #121212;
+
+  --font-synthesis: none;
+  --text-rendering: optimizeLegibility;
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
+}
+
+/* Dim Theme (Similar to Dark) */
+/* [data-theme="dim"] {
+  --text-color: #cfcfcf;
+  --background-color: #1a1a1a;
+} */
+
+/* Apply Theme Variables */
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  font-synthesis: var(--font-synthesis);
+  text-rendering: var(--text-rendering);
+  -webkit-font-smoothing: var(--webkit-font-smoothing);
+  -moz-osx-font-smoothing: var(--moz-osx-font-smoothing);
+}
