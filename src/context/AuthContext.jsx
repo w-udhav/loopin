@@ -1,10 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-// Create the AuthContext
 const AuthContext = createContext();
-
-// Custom hook for easy access
-export const useAuth = () => useContext(AuthContext);
 
 // AuthProvider component
 export const AuthProvider = ({ children }) => {
@@ -107,3 +103,9 @@ export const AuthProvider = ({ children }) => {
     </AuthContext.Provider>
   );
 };
+
+export function useAuth() {
+  const context = useContext(AuthContext);
+  if (!context) throw new Error("useAuth must be used within an AuthProvider");
+  return context;
+}

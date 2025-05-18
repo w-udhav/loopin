@@ -2,18 +2,23 @@
 
 /* Default Theme Variables */
 :root {
-  --font-family: system-ui, "Inter";
+  --font-family: "Inter","Helvetica", "Arial", sans-serif;
   --line-height: 1.5;
   --font-weight: 400;
 
   --color-scheme: light dark;
-  --text-color: #d1d1d1;
-  --background-color: #121212;
+  --text-color: #d8d7d7;
+  /* --text-color: #F5F5F7; */
+  --background-color: #0a0a0a;
 
   --font-synthesis: none;
   --text-rendering: optimizeLegibility;
   --webkit-font-smoothing: antialiased;
   --moz-osx-font-smoothing: grayscale;
+}
+
+*::selection {
+  background-color: #2B2B2B;
 }
 
 /* Dim Theme (Similar to Dark) */
