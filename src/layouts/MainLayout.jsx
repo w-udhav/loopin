@@ -8,7 +8,7 @@ const MainLayout = () => {
 
   return (
     <div className="h-screen grid grid-cols-1 md:grid-cols-12">
-      <Sidebar className="col-span-3 p-10" />
+      <Sidebar className="col-span-3" />
 
       {/* Main */}
       <div className="col-span-6 border flex flex-col flex-1 p-10">
