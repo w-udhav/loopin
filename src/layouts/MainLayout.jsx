@@ -7,12 +7,12 @@ const MainLayout = () => {
   const { isAuthenticated } = useAuth();
 
   return (
-    <div className="h-screen grid grid-cols-1 md:grid-cols-12">
-      <Sidebar className="col-span-3" />
+    <div className="h-screen grid grid-cols-1 md:grid-cols-12 gap-8">
+      <Sidebar className="col-start-1 col-end-3 " />
 
       {/* Main */}
-      <div className="col-span-6 border flex flex-col flex-1 p-10">
-        <main className="flex-1 p-4 border">
+      <div className="col-start-4 col-end-10 flex flex-col flex-1">
+        <main className="">
           {!isAuthenticated && <AuthModal />}
           <Outlet />
         </main>
